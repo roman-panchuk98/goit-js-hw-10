@@ -20,7 +20,12 @@
 }
 
 #datetime-picker:hover {
-    border: 1px solid #000;
+    border: 1px solid #000
+}
+
+#datetime-picker:focus {
+    outline: none;
+    border-color: blue;
 }
 
 .title-box {
@@ -28,14 +33,7 @@
     gap: 8px;
 }
 
-.title-box button {
-    background-color: #cfcfcf;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-    width: 75px;
-    cursor: pointer;
-}
+
 
 .timer {
     display: flex;
@@ -62,4 +60,25 @@
     font-size: 16px;
     line-height: 1.5;
     color: #2e2f42;
+}
+
+button {
+    cursor: not-allowed;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    background-color: #cfcfcf;
+}
+
+.button-active {
+    cursor: pointer;
+
+    background-color: #4e75ff;
+    color: #fff;
+    transition: background-color 300ms ease-in-out;
+}
+
+.button-active:hover {
+    background-color: #6c8cff;
 }
